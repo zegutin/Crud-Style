@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Cadastro de Novo Empregado</title>
+<link rel="stylesheet" type="text/css" href="component/style.css">
+</head>
+<body>
+
+	<h1>Adicionar Novo Empregado</h1>
+	
+	<form action="SaveServlet" method="post">
+		<table style="  border-radius: 5px;
+                        background-color: #f2f2f2;
+                        padding: 90px;">
+		
+			<tr>
+				<td style="font-size:25px;  font-style: italic;">Nome:</td>
+				<td><input type="text" name="name" style="background-color:#252526" /></td>
+			</tr>
+			<tr>
+				<td style="font-size:25px;  font-style: italic;">Senha:</td>
+				<td><input type="password" name="password" style="background-color:#252526" /></td>
+			</tr>
+			<tr>
+				<td style="font-size:25px; font-style: italic;">E-mail:</td>
+				<td><input class="email" type="email" name="email" style="background-color:#252526" /></td>
+			</tr>
+			<tr>
+				<td style="font-size:25px ;  font-style: italic;">País: </td>
+				<td><select style="background-color:#252526; color:#b9b2fb;" name="country" style="width: 180px ">
+						<option style="color:#b9b2fb">Brasil</option>
+						<option style="color:#b9b2fb">Ucrânia</option>
+						<option style="color:#b9b2fb">Chile</option>
+						<option style="color:#b9b2fb">Venezuela</option>
+				</select></td>
+			</tr>
+			<tr>
+				<td colspan="2"><br>
+				<input type="submit" value="Salvar Cadastro do Empregado" /></td>
+			</tr>
+		</table>
+	</form>
+	<br />
+	<a href="ViewServlet">Vizualizar Empregado Cadastrados</a>
+
+</body>
+</html>
